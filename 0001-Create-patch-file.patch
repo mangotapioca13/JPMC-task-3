@@ -1,0 +1,392 @@
+From 583dfb8caeec40766c5848f9f46a852d16d2d959 Mon Sep 17 00:00:00 2001
+From: angela <angela.liu1399@gmail.com>
+Date: Sun, 9 May 2021 13:48:35 -0500
+Subject: [PATCH] Create patch file
+
+---
+ .idea/JPMC-tech-task-3.iml |  11 +++
+ .idea/encodings.xml        |   4 +
+ .idea/misc.xml             |   4 +
+ .idea/modules.xml          |   8 ++
+ .idea/vcs.xml              |   6 ++
+ .idea/workspace.xml        | 172 +++++++++++++++++++++++++++++++++++++
+ src/DataManipulator.ts     |  38 +++++---
+ src/Graph.tsx              |  31 ++++---
+ 8 files changed, 251 insertions(+), 23 deletions(-)
+ create mode 100644 .idea/JPMC-tech-task-3.iml
+ create mode 100644 .idea/encodings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+
+diff --git a/.idea/JPMC-tech-task-3.iml b/.idea/JPMC-tech-task-3.iml
+new file mode 100644
+index 0000000..6711606
+--- /dev/null
++++ b/.idea/JPMC-tech-task-3.iml
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="TestRunnerService">
++    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+index 0000000..15a15b2
+--- /dev/null
++++ b/.idea/encodings.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000..7ba73c2
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..42dc24c
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/JPMC-tech-task-3.iml" filepath="$PROJECT_DIR$/.idea/JPMC-tech-task-3.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+index 0000000..c34f3e3
+--- /dev/null
++++ b/.idea/workspace.xml
+@@ -0,0 +1,172 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="2adb2e31-b7f3-4693-aabd-5c2d6ff36fc8" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/src/DataManipulator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataManipulator.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Graph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.tsx" afterDir="false" />
++    </list>
++    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileEditorManager">
++    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
++      <file pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/datafeed/server.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="326">
++              <caret line="127" column="38" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++    </leaf>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="IdeDocumentHistory">
++    <option name="CHANGED_PATHS">
++      <list>
++        <option value="$PROJECT_DIR$/src/Graph.tsx" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectFrameBounds" extendedState="7">
++    <option name="x" value="-12" />
++    <option name="width" value="1149" />
++    <option name="height" value="1455" />
++  </component>
++  <component name="ProjectView">
++    <navigator proportions="" version="1">
++      <foldersAlwaysOnTop value="true" />
++    </navigator>
++    <panes>
++      <pane id="ProjectPane">
++        <subPane>
++          <expand>
++            <path>
++              <item name="JPMC-tech-task-3" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JPMC-tech-task-3" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="JPMC-tech-task-3" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JPMC-tech-task-3" type="462c0819:PsiDirectoryNode" />
++              <item name="datafeed" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="JPMC-tech-task-3" type="b2602c69:ProjectViewProjectNode" />
++              <item name="JPMC-tech-task-3" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++            </path>
++          </expand>
++          <select />
++        </subPane>
++      </pane>
++      <pane id="Scope" />
++    </panes>
++  </component>
++  <component name="PropertiesComponent">
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
++  </component>
++  <component name="RunDashboard">
++    <option name="ruleStates">
++      <list>
++        <RuleState>
++          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
++        </RuleState>
++        <RuleState>
++          <option name="name" value="StatusDashboardGroupingRule" />
++        </RuleState>
++      </list>
++    </option>
++  </component>
++  <component name="RunManager">
++    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
++      <module name="JPMC-tech-task-3" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/datafeed" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datafeed/server.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Python.server" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="SvnConfiguration">
++    <configuration />
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="2adb2e31-b7f3-4693-aabd-5c2d6ff36fc8" name="Default Changelist" comment="" />
++      <created>1620527985940</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1620527985940</updated>
++    </task>
++    <servers />
++  </component>
++  <component name="ToolWindowManager">
++    <frame x="-7" y="-7" width="1519" height="977" extended-state="7" />
++    <editor active="true" />
++    <layout>
++      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966262" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info id="Favorites" order="2" side_tool="true" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" />
++      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289941" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Version Control" order="7" />
++      <window_info anchor="bottom" id="Terminal" order="8" />
++      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
++      <window_info anchor="bottom" id="Python Console" order="10" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++    </layout>
++  </component>
++  <component name="editorHistoryManager">
++    <entry file="file://$PROJECT_DIR$/src/Graph.tsx">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="32">
++          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/DataManipulator.ts">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="-153" />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/datafeed/server.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="326">
++          <caret line="127" column="38" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
++        </state>
++      </provider>
++    </entry>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/src/DataManipulator.ts b/src/DataManipulator.ts
+index f6b15ff..7321812 100644
+--- a/src/DataManipulator.ts
++++ b/src/DataManipulator.ts
+@@ -1,20 +1,36 @@
+ import { ServerRespond } from './DataStreamer';
+ 
+-export interface Row {
+-  stock: string,
+-  top_ask_price: number,
++export interface Row {  // Structure of the return object
++  price_abc: number,
++  price_def: number,
++  ratio: number,
+   timestamp: Date,
++  upper_bound: number,
++  lower_bound: number,
++  trigger_alert: number | undefined,
+ }
+ 
+ 
+ export class DataManipulator {
+-  static generateRow(serverResponds: ServerRespond[]): Row[] {
+-    return serverResponds.map((el: any) => {
+-      return {
+-        stock: el.stock,
+-        top_ask_price: el.top_ask && el.top_ask.price || 0,
+-        timestamp: el.timestamp,
+-      };
+-    })
++  static generateRow(serverResponds: ServerRespond[]): Row {
++    // Calculate or set values that will be used for return
++    const priceABC = (serverResponds[0].top_ask.price
++      + serverResponds[0].top_bid.price) / 2;
++    const priceDEF = (serverResponds[1].top_ask.price
++      + serverResponds[1].top_bid.price) / 2;
++    const ratio = priceABC / priceDEF;
++    const upperBound = 1 + 0.1;   // x% of the 12 month historical avg ratio
++    const lowerBound = 1 - 0.1;
++
++    return {
++      price_abc: priceABC,
++      price_def: priceDEF,
++      ratio,
++      timestamp: serverResponds[0].timestamp > serverResponds[1].timestamp ?
++        serverResponds[0].timestamp : serverResponds[1].timestamp,
++      upper_bound: upperBound,
++      lower_bound: lowerBound,
++      trigger_alert: (ratio > upperBound || ratio < lowerBound) ? ratio : undefined,
++    };
+   }
+ }
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 58fb997..caab0fc 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -6,7 +6,7 @@ import './Graph.css';
+ 
+ interface IProps {
+   data: ServerRespond[],
+-}
++} 
+ 
+ interface PerspectiveViewerElement extends HTMLElement {
+   load: (table: Table) => void,
+@@ -23,36 +23,43 @@ class Graph extends Component<IProps, {}> {
+     const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+ 
+     const schema = {
+-      stock: 'string',
+-      top_ask_price: 'float',
+-      top_bid_price: 'float',
+-      timestamp: 'date',
++      price_abc: 'float',       // Used for calculating ratio
++      price_def: 'float',
++      ratio: 'float',           // What we want to track
++      timestamp: 'date',        // Tracking with respect to time
++      upper_bound: 'float',     // Bound for ratio
++      lower_bound: 'float',
++      trigger_alert: 'float',   // Tracks when bounds are crossed
+     };
+ 
+     if (window.perspective && window.perspective.worker()) {
+       this.table = window.perspective.worker().table(schema);
+     }
++
+     if (this.table) {
+       // Load the `table` in the `<perspective-viewer>` DOM reference.
+       elem.load(this.table);
+       elem.setAttribute('view', 'y_line');
+-      elem.setAttribute('column-pivots', '["stock"]');
+       elem.setAttribute('row-pivots', '["timestamp"]');
+-      elem.setAttribute('columns', '["top_ask_price"]');
++      // Values we want to see on the y-axis
++      elem.setAttribute('columns', '["ratio", "lower_bound", "upper_bound", "trigger_alert"]');
+       elem.setAttribute('aggregates', JSON.stringify({
+-        stock: 'distinctcount',
+-        top_ask_price: 'avg',
+-        top_bid_price: 'avg',
++        price_abc: 'avg',
++        price_def: 'avg',
++        ratio: 'avg',
+         timestamp: 'distinct count',
++        upper_bound: 'avg',
++        lower_bound: 'avg',
++        trigger_alert: 'avg',
+       }));
+     }
+   }
+ 
+   componentDidUpdate() {
+     if (this.table) {
+-      this.table.update(
++      this.table.update([ // GenerateRow no longer returns an array value
+         DataManipulator.generateRow(this.props.data),
+-      );
++      ]);
+     }
+   }
+ }
+-- 
+2.31.1.windows.1
+
